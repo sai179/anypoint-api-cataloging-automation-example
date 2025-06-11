@@ -61,8 +61,7 @@ pipeline {
                         commandOutput=\$(api-catalog publish-asset --descriptor-file=catalog.yaml \
                         --host=${env.ANYPOINT_PLATFORM_URL} --organization=${env.ANYPOINT_PLATFORM_ORG_ID} \
                         --environment=${env.ENVIRONMENT} \
-                        --client_id=${env.CLIENT_ID} --client_secret=${env.CLIENT_SECRET} \
-                        --trigger-criteria=branches:${branchName});
+                        --client_id=${env.CLIENT_ID} --client_secret=${env.CLIENT_SECRET});
                         if [[ \\"\$commandOutput\\" == *\\"\$errorCode\\"* ]]
                             then
                                 echo "Error while Cataloging API - Please check the logs";
