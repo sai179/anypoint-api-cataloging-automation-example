@@ -36,11 +36,11 @@ pipeline {
             }
         }
         stage('Downloading Anypoint Cataloging CLI') {
-            steps {
+            /* steps {
                 script {
-                    // sh """npm install -g api-catalog-cli@latest"""
+                     sh """npm install -g api-catalog-cli@latest"""
                 }
-            }    
+            }  */  
             post {
                 success {
                     echo "...Download of Anypoint Cataloging CLI succeded for ${env.BUILD_VERSION}: ${currentBuild.currentResult}"
