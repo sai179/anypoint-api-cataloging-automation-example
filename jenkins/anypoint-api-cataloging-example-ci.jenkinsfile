@@ -38,7 +38,7 @@ pipeline {
         stage('Downloading Anypoint Cataloging CLI') {
             steps {
                 script {
-                    sh """npm install -g api-catalog-cli@latest"""
+                    // sh """npm install -g api-catalog-cli@latest"""
                 }
             }    
             post {
