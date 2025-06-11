@@ -4,12 +4,12 @@ projects:
     assetId: p-greetings-api
     version: 1.1.0
     apiVersion: v1
-    triggerConditions: 
-      branches:
-        - main
-        - master
-        - develop
-        - release/(.*)
+    #triggerConditions: 
+    #  branches:
+    #    - main
+    #    - master
+    #    - develop
+    #    - release/(.*)
       # Uncomment and adapt the following lines to your project-specific tags
       # tags:
       #   - support
